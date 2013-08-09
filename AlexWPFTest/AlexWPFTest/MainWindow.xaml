@@ -1,0 +1,23 @@
+﻿<Window x:Class="AlexWPFTest.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        Title="MainWindow" Height="400.492" Width="521.557">
+  <Grid>
+    <Grid.ColumnDefinitions>
+    </Grid.ColumnDefinitions>
+    <Image HorizontalAlignment="Left" Height="368" VerticalAlignment="Top" Width="520" RenderTransformOrigin="0.507,0.491" Source="C:\Users\obu\Downloads\Map.png" Margin="-6,0,0,0"/>
+    <ListBox x:Name="ListBox1" HorizontalAlignment="Left" Height="205" VerticalAlignment="Top" Width="161" Margin="-618,-868,0,0" Opacity="0.75" Background="#FFC7ABAB" RenderTransformOrigin="-0.189,-0.118" MouseLeave="ListBox1_MouseLeave">
+      <ListBox.RenderTransform>
+        <TransformGroup>
+          <ScaleTransform/>
+          <SkewTransform AngleY="-7.332"/>
+          <RotateTransform Angle="7.109"/>
+          <TranslateTransform X="948.488" Y="897.25"/>
+        </TransformGroup>
+      </ListBox.RenderTransform>
+      <Button Content="X" Width="25" Background="#FFEA1111" BorderThickness="3,3,3,3" FontSize="16" FontWeight="Bold" FontStretch="ExtraExpanded" Click = "Button_Click" />
+      <ListBoxItem Content="AK74" MouseEnter="ListBoxItem_MouseEnter"></ListBoxItem>
+    </ListBox>
+    <Button Content="Loot" HorizontalAlignment="Left" VerticalAlignment="Top" Width="27" Margin="233,175,0,0" Background="#FFDE1919" Click ="MouseEnter1"/>
+  </Grid>
+</Window>
